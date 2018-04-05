@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
          id_text = findViewById(R.id.editText);
          pass_text = findViewById(R.id.editText2);
-         login_button = findViewById(R.id.button2);
+         login_button = findViewById(R.id.logButton);
 
          login_button.setOnClickListener(new View.OnClickListener() {
              @Override
