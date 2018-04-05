@@ -13,6 +13,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private static final int RESULT_CODE = 1;
+    private static final int RESULT_CODE_SUB1 = 11;
+    private static final int RESULT_CODE_SUB2 = 12;
+    private static final int RESULT_CODE_SUB3 = 13;
+
     private EditText id_text;
     private EditText pass_text;
     private Button login_button;
@@ -57,6 +61,21 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("MainActivity", "Null intent를 참조하였습니다");
                     }
                 }
+                break;
+
+
+        }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        try{
+            Bundle bundle = intent.getExtras();
+            String name = bundle.getString("name");
+            Toast.makeText(this, name + " 메뉴에서 응답함.", Toast.LENGTH_LONG).show();
+        } catch (NullPointerException e){
+            Log.e("MainActivity", "Null intent를 참조하였습니다");
         }
     }
 }
