@@ -17,6 +17,8 @@ public class MenuActivity extends AppCompatActivity {
     private Button customer_info_maintain_button;
     private Button sales_info_maintain_button;
     private Button product_info_maintain_button;
+    private Button from_menu_to_login_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class MenuActivity extends AppCompatActivity {
         customer_info_maintain_button = findViewById(R.id.button);
         sales_info_maintain_button = findViewById(R.id.button2);
         product_info_maintain_button = findViewById(R.id.button3);
+
+        from_menu_to_login_button = findViewById(R.id.button10);
 
         customer_info_maintain_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +54,20 @@ public class MenuActivity extends AppCompatActivity {
                 startActivityForResult(intent3, RESULT_CODE_SUB3);
             }
         });
+
+        from_menu_to_login_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                processCommand();
+            }
+        });
+    }
+
+    private void processCommand(){
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.putExtra("name", "MenuActivity");
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     @Override
