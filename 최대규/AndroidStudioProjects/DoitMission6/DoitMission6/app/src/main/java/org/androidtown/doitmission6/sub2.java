@@ -1,5 +1,6 @@
 package org.androidtown.doitmission6;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,10 +12,18 @@ public class sub2 extends AppCompatActivity {
     private Button toMenu;
     private Button toLogIn;
 
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub2 extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub2);
+
 
         toLogIn = findViewById(R.id.button7);
         toLogIn.setOnClickListener(new View.OnClickListener() {
@@ -38,5 +47,6 @@ public class sub2 extends AppCompatActivity {
         setResult(RESULT_OK, intent);
 
         finish();
+
     }
 }

@@ -1,5 +1,6 @@
 package org.androidtown.doitmission6;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,12 @@ public class sub1Activity extends AppCompatActivity {
 
     private Button toMenu;
     private Button toLogin;
+
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub1Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +42,6 @@ public class sub1Activity extends AppCompatActivity {
         startActivity(intent);
 
         finish();
+
     }
 }
