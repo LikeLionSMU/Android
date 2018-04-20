@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@android:color/holo_green_light"
     android:padding="20dp"
     tools:context="org.androidtown.doitmission6.sub3">
@@ -36,4 +37,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    tools:context="org.androidtown.doitmission6.sub3">
+
+
 </android.support.constraint.ConstraintLayout>

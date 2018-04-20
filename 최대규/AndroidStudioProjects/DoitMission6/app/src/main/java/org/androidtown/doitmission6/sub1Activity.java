@@ -12,11 +12,11 @@ public class sub1Activity extends AppCompatActivity {
     private Button toMenu;
     private Button toLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub1);
-
         toMenu = findViewById(R.id.button4);
         toLogin = findViewById(R.id.button5);
     }

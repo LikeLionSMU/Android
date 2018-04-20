@@ -1,4 +1,4 @@
-package org.androidtown.doitmission6;
+﻿package org.androidtown.doitmission6;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -19,11 +19,11 @@ public class MenuActivity extends AppCompatActivity {
     private Button product_info_maintain_button;
     private Button from_menu_to_login_button;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
         customer_info_maintain_button = findViewById(R.id.button);
         sales_info_maintain_button = findViewById(R.id.button2);
         product_info_maintain_button = findViewById(R.id.button3);

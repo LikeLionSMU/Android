@@ -33,10 +33,17 @@ public class MainActivity extends AppCompatActivity {
          login_button.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
+
                  if(id_text.getText().toString().equals("")){
                      Toast.makeText(MainActivity.this, "ID를 입력해주세요.", Toast.LENGTH_LONG).show();
                  }
                  else if(pass_text.getText().toString().equals("")){
+
+                 if(id_text.getText().toString() == null){
+                     Toast.makeText(MainActivity.this, "ID를 입력해주세요.", Toast.LENGTH_LONG).show();
+                 }
+                 else if(pass_text.getText().toString() == null){
+
                      Toast.makeText(MainActivity.this, "PASSWORD를 입력해주세요.", Toast.LENGTH_LONG).show();
                  }
                  else{
@@ -61,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("MainActivity", "Null intent를 참조하였습니다");
                     }
                 }
+
                 break;
 
 
