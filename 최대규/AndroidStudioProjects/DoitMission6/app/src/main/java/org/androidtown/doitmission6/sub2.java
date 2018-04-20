@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
 public class sub2 extends AppCompatActivity {
-
-    private Button toMenu;
-    private Button toLogIn;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

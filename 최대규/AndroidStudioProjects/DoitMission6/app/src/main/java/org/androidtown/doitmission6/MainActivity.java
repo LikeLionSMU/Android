@@ -1,4 +1,4 @@
-﻿package org.androidtown.doitmission6;
+﻿﻿package org.androidtown.doitmission6;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -78,4 +78,5 @@ public class MainActivity extends AppCompatActivity {
             Log.e("MainActivity", "Null intent를 참조하였습니다");
         }
 
+    }
 }
