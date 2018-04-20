@@ -1,5 +1,10 @@
 package org.androidtown.doitmission6;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub3 extends AppCompatActivity {
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

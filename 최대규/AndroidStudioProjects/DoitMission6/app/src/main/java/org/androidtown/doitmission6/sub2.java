@@ -1,5 +1,10 @@
 package org.androidtown.doitmission6;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub2 extends AppCompatActivity {
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,8 +14,10 @@ import android.widget.Button;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+
 public class sub2 extends AppCompatActivity {
-    @Override
+
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub2);
