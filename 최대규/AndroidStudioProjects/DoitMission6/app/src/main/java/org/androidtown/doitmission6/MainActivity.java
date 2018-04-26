@@ -1,4 +1,9 @@
-﻿﻿package org.androidtown.doitmission6;
+﻿package org.androidtown.doitmission6;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -21,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
     private EditText pass_text;
     private Button login_button;
 
-
-    @Override
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
          id_text = findViewById(R.id.editText);
          pass_text = findViewById(R.id.editText2);
          login_button = findViewById(R.id.logButton);
@@ -77,6 +82,5 @@ public class MainActivity extends AppCompatActivity {
         } catch (NullPointerException e){
             Log.e("MainActivity", "Null intent를 참조하였습니다");
         }
-
-    }
+   }
 }

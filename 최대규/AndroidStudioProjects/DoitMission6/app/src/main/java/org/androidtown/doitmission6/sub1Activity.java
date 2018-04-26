@@ -1,5 +1,10 @@
 package org.androidtown.doitmission6;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub1Activity extends AppCompatActivity {
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,11 +17,11 @@ public class sub1Activity extends AppCompatActivity {
     private Button toMenu;
     private Button toLogin;
 
-
-    @Override
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub1);
+
         toMenu = findViewById(R.id.button4);
         toLogin = findViewById(R.id.button5);
     }

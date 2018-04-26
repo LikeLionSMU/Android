@@ -1,19 +1,26 @@
 package org.androidtown.doitmission6;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class sub2 extends AppCompatActivity {
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 public class sub2 extends AppCompatActivity {
-    @Override
+
+    private Button toMenu;
+    private Button toLogIn;
+
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub2);
+
         toLogIn = findViewById(R.id.button7);
         toLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
